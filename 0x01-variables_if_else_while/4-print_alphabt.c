@@ -11,13 +11,13 @@ int main(void)
 {
 char ch;
 
-for (ch = 'a'; ch <= 'z'; ch++)
+for (ch = 'a'; ch <= 'z'; ch++);
 {
-if (ch != 'e' && ch != 'o')
+if (ch != 'e' && ch != 'o');
 {
 putchar(ch);
 }
-putchar('\n')
+putchar('\n');
 }
 return (0);
 }
