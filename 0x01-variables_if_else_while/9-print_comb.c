@@ -17,6 +17,10 @@ if (i < 9)
 putchar(',');
 putchar(' ');
 }
+else
+{
+putchar(' ');
+}
 }
 return (0);
 }
