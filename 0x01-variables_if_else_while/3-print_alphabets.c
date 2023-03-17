@@ -3,7 +3,7 @@
 /**
  * main - Entry point for the program
  *
- * This function generates a lowercase alphabets
+ * This function generates a lowercase and uppercase alphabets
  *
  * Return: Always 0 (success)
  */
