@@ -7,7 +7,7 @@
 /**
  * main - Entry point for the program
  *
- * This function generates a random integer, and prints whether it is
+ * This function generates a random integer, and prints whether the last digit is
  * positive, negative, or zero.
  *
  * Return: Always 0 (success)
