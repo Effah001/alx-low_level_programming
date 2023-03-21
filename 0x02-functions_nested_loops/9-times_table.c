@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -6,7 +6,7 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
+void times_table(void)
 {
 	int i, j;
 
@@ -16,16 +16,15 @@ int main(void)
 	{
 		int result = i * j;
 
-		putchar('0' + result / 10 % 10);
-		putchar('0' + result % 10);
+		_putchar('0' + result / 10 % 10);
+		_putchar('0' + result % 10);
 		if (j < 9)
 		{
-		putchar(',');
-		putchar(' ');
+		_putchar(',');
+		_putchar(' ');
 }
 }
-		putchar('$');
-	putchar('\n');
+		_putchar('$');
+	_putchar('\n');
 }
-	return (0);
 }
