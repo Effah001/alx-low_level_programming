@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <ctype.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -9,15 +8,14 @@
 
 int main(void)
 	{
-	char ch = 'c';
 
-	if (isalpha(ch))
+	if (c >= 'a' || c >= 'A' && c <= 'z' || c <= 'Z')
 	{
-		putchar('1');
+		return (1);
 	}
 	else
 	{
-		putchar('0');
+		return (0);
 	}
-	return (0);
+		_putchar('\n');
 }
