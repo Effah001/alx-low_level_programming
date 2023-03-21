@@ -14,14 +14,14 @@
 	{
 		for (i = n; i < 98; i++)
 	{
-		_putchar("%d, ", i);
+		_putchar(i);
 	}
 	}
 	else
 	{
 		for (i = n; i > 98; i--)
 	{
-		putchar("%d, ", i);
+		putchar(i);
 	}
 	}
 
