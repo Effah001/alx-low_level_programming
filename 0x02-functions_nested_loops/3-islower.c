@@ -6,7 +6,7 @@
  * Return: Always 0 (Success)
  */
 
-int _islower(int c)
+int _islower( )
 	{
 	char ch = 'c';
 
