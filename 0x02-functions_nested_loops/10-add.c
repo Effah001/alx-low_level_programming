@@ -1,25 +1,11 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 
-
-	int add(int a, int b)
+int add ( int x, int y)
 	{
-	int result = a + b;
-
-	return (result);
+		return ( x + y);
 	}
-
-	int main(void)
-	{
-	int a = 4;
-	int b = 5;
-	int result = add(a, b);
-
-	printf("%d\n", result);
-	return (0);
-}
