@@ -1,19 +1,18 @@
-#include <stdio.h>
-#include <ctype.h>
+#inclde "main.h"
 
 /**
- * main - Entry point
+ * int _islower - determine if a character is lowercase
  *
  * Return: Always 0 (Success)
  */
 
-int main(void)
+int _islower(int c)
 	{
 	char ch = 'c';
 
-	if (islower(ch))
+	if (_islower(ch))
 	{
-	putchar('1');
+	_putchar('1');
 	}
 	else
 	{
