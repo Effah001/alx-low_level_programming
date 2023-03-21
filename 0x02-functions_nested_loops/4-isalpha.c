@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * int _isalpha - determines if the character is lowercase or uppercase
  *
  * Return: Always 0 (Success)
  */
 
-int main(void)
+int _isalpha(int c)
 	{
 
 	if (c >= 'a' || c >= 'A' && c <= 'z' || c <= 'Z')
