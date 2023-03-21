@@ -10,8 +10,8 @@
 
 int main(void)
 	{
-	int a = -4;
+	a = abs(-4);
 
-	printf("%d", abs(a));
+	printf("%d", a);
 	return (0);
 }
