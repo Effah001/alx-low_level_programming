@@ -15,15 +15,15 @@ void print_to_98(int n)
             int num = i;
             if (num < 0) {
                 num = -num;
-                putchar('-');
+                _putchar('-');
             }
             if (num >= 10) {
-                putchar(num / 10 + '0');
+                _putchar(num / 10 + '0');
             }
-            putchar(num % 10 + '0');
+            _putchar(num % 10 + '0');
             if (i < 98) {
-                putchar(',');
-                putchar(' ');
+                _putchar(',');
+                _putchar(' ');
             }
         }
     } else {
@@ -31,18 +31,18 @@ void print_to_98(int n)
             int num = i;
             if (num < 0) {
                 num = -num;
-                putchar('-');
+                _putchar('-');
             }
             if (num >= 10) {
-                putchar(num / 10 + '0');
+                _putchar(num / 10 + '0');
             }
-            putchar(num % 10 + '0');
+            _putchar(num % 10 + '0');
             if (i > 98) {
-                putchar(',');
-                putchar(' ');
+                _putchar(',');
+                _putchar(' ');
             }
         }
     }
 
-    putchar('\n');
+    _putchar('\n');
 }
