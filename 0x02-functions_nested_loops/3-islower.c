@@ -3,10 +3,10 @@
 /**
  * int _islower - determine if a character is lowercase
  *
- * Return: Always 0 (Success)
+ * Return: 1 if char is lowercase and 0 if not
  */
 
-int _islower()
+int _islower(int c)
 	{
 	char ch = 'c';
 
