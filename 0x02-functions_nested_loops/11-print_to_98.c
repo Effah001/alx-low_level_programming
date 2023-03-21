@@ -21,10 +21,10 @@
 	{
 		for (i = n; i > 98; i--)
 	{
-		putchar(i);
+		_putchar(i);
 	}
 	}
 
-	printf("98\n");
+	_putchar("98\n");
 
 }
