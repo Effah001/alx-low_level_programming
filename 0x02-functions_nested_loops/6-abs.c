@@ -10,8 +10,8 @@ int _abs(int a)
 	{
 	if ( a >= 0 )
 	{
-		return (i);
-	elseif (a <= 0)
+		return (a);
+	else (a <= 0)
 	{
 		return (-a);
 	}
