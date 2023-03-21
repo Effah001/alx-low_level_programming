@@ -1,7 +1,6 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
-
 
 /**
  * main - Entry point
@@ -9,11 +8,10 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
+int _abs(int)
 	{
-	int a;
-	a = abs(-4);
+	int abs_a = abs(a);
+	printf("%d %d", a, abs_a);
+	return abs_a;
 
-	printf("%d", a);
-	return (0);
 }
