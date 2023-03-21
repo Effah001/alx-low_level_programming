@@ -10,6 +10,7 @@
 
 int main(void)
 	{
+	int a;
 	a = abs(-4);
 
 	printf("%d", a);
