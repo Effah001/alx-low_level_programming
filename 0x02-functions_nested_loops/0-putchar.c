@@ -19,4 +19,5 @@ int main(void)
 	putchar(str[i]);
 	i++;
 	}
+	return 0;
 }
