@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- int _isalpha - determing if a character is lowercase or uppercase
- * @c: The character to print
+ int _isalpha - tell if a character is lowercase or uppercase
  *
  * Return: On success 1.
  * On error, 0 is returned
