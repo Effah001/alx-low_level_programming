@@ -1,12 +1,12 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet_x10 - print the alpahbet 10 times
  *
  * Return: Always 0 (Success)
  */
 
-int main(void)
+void print_alphabet_x10(void)
 {
 	char i, j;
 
@@ -16,6 +16,6 @@ int main(void)
 		{
 			putchar(i);
 		}
-	return (0);
+
 }
 }
