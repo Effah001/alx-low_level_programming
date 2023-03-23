@@ -7,10 +7,13 @@
  */
 void print_diagonal(int n)
 {
-	_putchar('\n');
 	
 	int i, j;
 
+	if (n <= 0) 
+	{
+	printf("\n");
+	}
 	for (j = 0; j < n; j++)
 	{
 	for (i = 0; i < j; i++)
