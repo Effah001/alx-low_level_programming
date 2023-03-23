@@ -2,7 +2,7 @@
 
 /**
 * print_triangle - prints triangle using #
-* size - prints the number of trinagle
+*@size: prints the number of trinagle
 *
 */
 
