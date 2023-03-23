@@ -11,7 +11,6 @@ int getMaxPrimeFactor(int n)
    }
    for(i = 3; i <= sqrt(n); i=i+2)
    { 
-      only odd numbers
       while(n % i == 0) 
       {
          max = i;
