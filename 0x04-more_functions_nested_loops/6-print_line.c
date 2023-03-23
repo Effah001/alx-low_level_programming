@@ -3,7 +3,6 @@
 /**
  *print_line - prints a line
  *@n : the line to be printed
- *@j : j is the number pf lines
  * Return: Always 0.
  */
 void print_line(int n)
