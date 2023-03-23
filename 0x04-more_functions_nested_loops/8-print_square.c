@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * void print_square - prints a square
+ *print_square - prints a square
  *@size: print the number o squares
  * Return: Always 0.
  */
