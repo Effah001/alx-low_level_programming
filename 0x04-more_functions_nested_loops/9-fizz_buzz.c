@@ -9,12 +9,12 @@
 int main(void)
 	{
 	int i;
-	
+
 	if (i < 100)
 	{
 		putchar(' ');
-	}	
-	
+	}
+
 	for (i = 1; i <= 100; i++)
 	{
 
