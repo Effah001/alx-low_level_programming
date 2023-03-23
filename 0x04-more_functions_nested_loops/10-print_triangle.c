@@ -2,7 +2,8 @@
 
 /**
 * print_triangle - prints triangle using #
-* 
+* size - prints the number of trinagle
+*
 */
 
 void print_triangle(int size)
