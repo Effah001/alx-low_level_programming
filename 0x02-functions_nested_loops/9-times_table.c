@@ -15,20 +15,20 @@ void times_table(void)
 	int result = i * j;
 	if (result > 9)
 	{
-		putchar('0' + result / 10 % 10);
-		putchar('0' + result % 10);
+		_putchar('0' + result / 10 % 10);
+		_putchar('0' + result % 10);
 	} 
 	else 
 	{
-		putchar('0' + result % 10);
-		putchar(' ');
+		_putchar('0' + result % 10);
+		_putchar(' ');
 	}
 	if (j < 9)
 	{
-		putchar(',');
-		putchar(' ');
+		_putchar(',');
+		_putchar(' ');
 	}
 	}
 	}
-		putchar('\n');
+		_putchar('\n');
 	}
