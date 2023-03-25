@@ -1,39 +1,29 @@
 #include <stdio.h>
 
-
 /**
 * main - finds and prints the sum of the even-valued terms
 * followed by a new line
 * Return: Always 0 (Success)
 */
 
-	int main(void)
+int main(void)
+{
+	unsigned long int fib1 = 1, fib2 = 2;
+	unsigned long int max_val = 4000000;
+	unsigned long int even_sum = 0;
+
+	while (fib2 <= max_val) {
+
+	if (fib2 % 2 == 0)
 	{
-		int i;
-		unsigned long int j, k, next, sum;
-
-
-		j = 1;
-		k = 2;
-		sum = 0;
-
-
-		for (i = 1; i <= 33; ++i)
-		{
-			if (j < 4000000 && (j % 2) == 0)
-			{
-				sum = sum + j;
-			}
-			next = j + k;
-			j = k;
-			k = next;
-		}
-
-
-		printf("%lu\n", sum);
-
-
-		return (0);
+	even_sum += fib2;
+	}
+	int fib3 = fib1 + fib2;
+	fib1 = fib2;
+	fib2 = fib3;
 	}
 
+	printf("%d\n", even_sum);
 
+	return (0);
+}
