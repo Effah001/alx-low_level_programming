@@ -18,7 +18,7 @@ int main(void)
 	{
 	even_sum += fib2;
 	}
-	unsigned long int fib3 = fib1 + fib2;
+	fib3 = fib1 + fib2;
 	fib1 = fib2;
 	fib2 = fib3;
 	}
