@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
 * main - Prints first 50 Fibonacci numbers, starting with 1 and 2,
@@ -6,27 +6,19 @@
 *
 * Return: Always 0.
 */
+	int main()
+	{
+	unsigned long long int a = 1, b = 2, c, count = 0;
 
-int main(void)
+	printf("%llu\n%llu\n", a, b);
+
+	while (count < 48)
 	{
-	int i, fib[50];
-	
-	fib[0] = 1;
-	fib[1] = 2;
-		_putchar(fib[0] + '0');
-		_putchar('\n'):
-		_putchar(fib[1] + '0');
-		_putchar('\n');
-	for(i = 2; i < 50; i++)
-	{
-		fib[i] = fib[i-1] + fib[i-2]; 
-		int n = fib[i];
-		
-	while(n > 0)
-	{
-		_putchar((n % 10) + '0'); 
-		n /= 10;
+	c = a + b;
+		printf("%llu\n", c);
+	a = b;
+	b = c;
+	count++;
 	}
-	_putchar('\n');
-	}
+return 0;
 }
