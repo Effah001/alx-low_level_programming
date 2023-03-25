@@ -4,9 +4,10 @@
  * print_times_table - prints out the n times table
  */
 
-void print_times_table(int)
+void print_times_table(int n)
 {
-	int i, j;
+	int i, j, n;
+	n = 12;
 
 	for (i = 0; i <= 9; i++)
 	{
