@@ -1,7 +1,7 @@
 #include "main.h"
-
 /**
  * print_times_table - prints out the n times table
+ *@n : number of times to be printed
  */
 
 void print_times_table(int n)
@@ -28,7 +28,6 @@ void print_times_table(int n)
 		_putchar(' ');
 		_putchar('0' + result);
 		}
-
 	else if (result < 100 )
 	{
 		_putchar(',');
