@@ -10,12 +10,12 @@
 	{
 	unsigned long long int a = 1, b = 2, c, count = 0;
 
-	printf("%llu\n%llu\n", a, b);
+	printf("%lu\n%lu\n", a, b);
 
 	while (count < 48)
 	{
 	c = a + b;
-		printf("%llu\n", c);
+		printf("%lu\n", c);
 	a = b;
 	b = c;
 	count++;
