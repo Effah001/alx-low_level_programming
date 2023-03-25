@@ -6,7 +6,7 @@
 *
 * Return: Always 0.
 */
-	int main()
+	int main(void)
 	{
 	unsigned long int a = 1, b = 2, c, count = 0;
 
@@ -15,7 +15,7 @@
 	while (count < 48)
 	{
 	c = a + b;
-	if (c == 46)
+	if (count == 46)
 	{
 		printf("%lu", c);
 	}
@@ -27,5 +27,5 @@
 	b = c;
 	count++;
 	}
-return 0;
+return (0);
 }
