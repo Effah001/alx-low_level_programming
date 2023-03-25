@@ -11,6 +11,7 @@ int main(void)
 	unsigned long int fib1 = 1, fib2 = 2;
 	unsigned long int max_val = 4000000;
 	unsigned long int even_sum = 0;
+	unsigned long int fib3;
 
 	while (fib2 <= max_val) {
 
