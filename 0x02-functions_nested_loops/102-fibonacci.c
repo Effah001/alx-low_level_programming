@@ -21,7 +21,7 @@
 	}
 	else
 	{
-		printf("%lu, ", c)
+		printf("%lu, ", c);
 	a = b;
 	b = c;
 	count++;
