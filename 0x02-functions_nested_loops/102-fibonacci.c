@@ -22,6 +22,7 @@
 	else
 	{
 		printf("%lu, ", c);
+	}
 	a = b;
 	b = c;
 	count++;
