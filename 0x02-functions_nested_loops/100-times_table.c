@@ -22,12 +22,17 @@ void print_times_table(int n)
 	}
 	else if (result < 10)
 		{
-		_putchar(','); _putchar(' '); _putchar(' '); _putchar(' ');
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+		_putchar(' ');
 		_putchar('0' + result);
 		}
 	else if (result < 100)
 	{
-		_putchar(','); _putchar(' '); _putchar(' ');
+		_putchar(','); 
+		_putchar(' ');
+		_putchar(' ');
 		_putchar('0' + result / 10 % 10);
 		_putchar('0' + result % 10);
 	}
