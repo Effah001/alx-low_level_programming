@@ -15,7 +15,7 @@
 	while (count < 48)
 	{
 	c = a + b;
-	if (c == 46)
+	if (c == 47)
 	{
 		printf("%lu", c);
 	}
