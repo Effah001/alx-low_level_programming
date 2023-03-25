@@ -23,7 +23,7 @@ int main(void)
 	fib2 = fib3;
 	}
 
-	printf("%ul\n", even_sum);
+	printf("%lu\n", even_sum);
 
 	return (0);
 }
