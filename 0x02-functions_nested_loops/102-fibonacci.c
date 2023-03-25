@@ -13,10 +13,10 @@ int main(void)
 	
 	fib[0] = 1;
 	fib[1] = 2;
-		putchar(fib[0] + '0');
-		putchar('\n'):
-		putchar(fib[1] + '0');
-		putchar('\n');
+		_putchar(fib[0] + '0');
+		_putchar('\n'):
+		_putchar(fib[1] + '0');
+		_putchar('\n');
 	for(i = 2; i < 50; i++)
 	{
 		fib[i] = fib[i-1] + fib[i-2]; 
@@ -24,9 +24,9 @@ int main(void)
 		
 	while(n > 0)
 	{
-		putchar((n % 10) + '0'); 
+		_putchar((n % 10) + '0'); 
 		n /= 10;
 	}
-	putchar('\n');
+	_putchar('\n');
 	}
 }
