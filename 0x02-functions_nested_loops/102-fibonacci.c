@@ -8,7 +8,7 @@
 */
 	int main()
 	{
-	unsigned long long int a = 1, b = 2, c, count = 0;
+	unsigned long int a = 1, b = 2, c, count = 0;
 
 	printf("%lu\n%lu\n", a, b);
 
