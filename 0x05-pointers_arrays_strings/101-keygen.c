@@ -6,10 +6,12 @@ int main(void)
 {
     char password[7];
 
+    int i;
+    
     srand(time(NULL)); 
 
     
-    for (int i = 0; i < 6; i++)
+    for (i = 0; i < 6; i++)
     {
         int rand_num = rand() % 62;
         if (rand_num < 10)
