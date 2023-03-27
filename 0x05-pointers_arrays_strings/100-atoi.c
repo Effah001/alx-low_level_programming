@@ -16,29 +16,24 @@ int _atoi(char *s)
         return 0;
     }
     
-    if (s[0] == '-')
-    {
-        sign = -1;
-        i++;
-    }
-    else if (s[0] == '+')
-    {
-        i++;
-    }
-
     while (s[i] != '\0')
     {
-        if (s[i] >= '0' && s[i] <= '9')
+        if (s[i] == '-')
+        {
+            sign *= -1;
+        }
+        else if (s[i] == '+')
+        {
+            sign *= 1;
+        }
+        else if (s[i] >= '0' && s[i] <= '9')
         {
             result = result * 10 + (s[i] - '0');
             has_digits = 1;
         }
-        else
+        else if (has_digits)
         {
-            if (has_digits)
-            {
-                break;
-            }
+            break;
         }
 
         i++;
