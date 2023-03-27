@@ -10,7 +10,7 @@
 	{
 	int i, n, len;
 
-	len = 0;
+	len = 1;
 	while (str[len] != '\0')
 	{
 	len++;
@@ -24,5 +24,5 @@
 	{
 	_putchar(str[i]);
 	}
-	_putchar('\n'); 
+	_putchar('\n');
 }
