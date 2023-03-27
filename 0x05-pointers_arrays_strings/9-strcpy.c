@@ -1,12 +1,14 @@
 #include "main.h"
 /**
-* reset_to_98 :  resets the value of an integer pointer to 98
-*
+* _strcpy -  copies a string pointed by str to dest
+*@scr - pointer for thr initial string
+*@dest - pointer to be copied to 
 */
 
 char *_strcpy(char *dest, char *src)
 	{
 	char *dest_start = dest;
+	
 	while (*src != '\0')
 	{
 	*dest = *src;
@@ -14,5 +16,5 @@ char *_strcpy(char *dest, char *src)
 	src++;
 	}
 		*dest = '\0';
-	return dest_start;
+	return (dest_start);
 }
