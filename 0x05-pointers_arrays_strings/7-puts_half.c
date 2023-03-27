@@ -10,7 +10,7 @@
 	{
 	int i, n, len;
 
-	len = 1;
+	len = 0;
 	while (str[len] != '\0')
 	{
 	len++;
@@ -20,7 +20,7 @@
 	{
 	n = (len - 1) / 2;
 	}
-	for (i = n; i < len; i++)
+	for (i = n - 1; i < len; i++)
 	{
 	_putchar(str[i]);
 	}
