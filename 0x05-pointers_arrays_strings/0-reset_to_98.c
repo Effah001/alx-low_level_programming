@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * @n: pointer variable
+ * reset_to_98 : take in an address
  * Return: nothing
  */
 
