@@ -4,14 +4,16 @@
 *@str : pointer to a string
 * Return: nothing
 */
-	int i, n, len;
+
 
 	void puts_half(char *str)
 	{
+	int i, n, len;
+
 	len = 0;
 	while (str[len] != '\0')
 	{
-        len++;
+	len++;
 	}
 	n = len / 2;
 	if (len % 2 != 0)
@@ -20,7 +22,7 @@
 	}
 	for (i = n; i < len; i++)
 	{
-        _putchar(str[i]);
+	_putchar(str[i]);
 	}
 	_putchar('\n'); 
 }
