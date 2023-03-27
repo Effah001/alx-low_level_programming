@@ -1,7 +1,9 @@
 #include "main.h"
 /**
- * Return: nothing
- */
+* reset_to_98 : Take in an address 
+*@n : the address variable
+* Return: nothing
+*/
 
 void reset_to_98(int *n)
 	{
