@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 *_puts - prints a string to stdout
-*@n : pointer to an integer to be reset
+*@str : pointer to the string to be printed  
 * Return: nothing
 */
 
