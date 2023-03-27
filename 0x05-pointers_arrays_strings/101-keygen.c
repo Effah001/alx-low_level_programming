@@ -7,23 +7,24 @@ int main(void)
     char password[100];
     int i;
 
-    srand(time(NULL));  // seed the random number generator with current time
+    srand(time(NULL));  
     
-    for (i = 0; i < 10; i++) {
-        int r = rand() % 62;  // generate a random integer between 0 and 61
-        
+    for (i = 0; i < 10; i++)
+    {
+        int r = rand() % 62;
+
         if (r < 26) {
-            password[i] = 'a' + r;  // add lowercase letter
+            password[i] = 'a' + r; 
         } else if (r < 52) {
-            password[i] = 'A' + r - 26;  // add uppercase letter
+            password[i] = 'A' + r - 26;  
         } else {
-            password[i] = '0' + r - 52;  // add digit
+            password[i] = '0' + r - 52; 
         }
     }
 
-    password[i] = '\0';  // terminate the string with null character
+    password[i] = '\0';  
     
-    printf("%s\n", password);  // print the generated password
+    printf("%s\n", password);  
     
     return 0;
 }
