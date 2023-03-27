@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* reset_t:  resets the value of an integer pointer to 98
-*@n : pointer to an integer to be reset
+* reset_string - reverse a string
+*@s : pointer to an integer to be reversed
 * Return: nothing
 */
 	void rev_string(char *s)
@@ -14,10 +14,12 @@
 	len++;
 	}
 
-	for(i = 0; i < len/2; i++)
+	for (i = 0; i < len / 2; i++)
 	{
 	char tmp = s[i];
-	s[i] = s[len-i-1];
-	s[len-i-1] = tmp;
+
+	s[i] = s[len - i - 1];
+
+	s[len - i - 1] = tmp;
 	}
 }
