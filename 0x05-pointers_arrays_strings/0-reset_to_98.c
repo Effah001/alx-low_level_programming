@@ -1,6 +1,5 @@
 #include "main.h"
 /**
- * reset_to_98 : take in an address
  * Return: nothing
  */
 
