@@ -4,10 +4,10 @@
 
 int main(void)
 {
-    int i;
-    srand(time(NULL));  
     char password[7]; 
 
+    int i;
+    
     for (i = 0; i < 7; i++)
     {
         if (i == 6)
