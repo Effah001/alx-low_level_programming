@@ -14,7 +14,7 @@ int _atoi(char *s)
 
 	if (s == NULL)
 	{
-	return 0;
+	return (0);
 	}
 
 	while (s[i] != '\0')
