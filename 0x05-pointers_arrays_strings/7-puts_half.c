@@ -18,11 +18,11 @@
 	n = len / 2;
 	if (len % 2 != 0)
 	{
-	n = (len - 1) / 2;
+	n = (len + 1) / 2;
 	}
 	for (i = n; i < len; i++)
 	{
-	_putchar(str[i]);
+		_putchar(str[i]);
 	}
-	_putchar('\n');
+		_putchar('\n');
 }
