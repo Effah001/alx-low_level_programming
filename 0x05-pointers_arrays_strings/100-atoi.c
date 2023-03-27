@@ -7,8 +7,11 @@
  */
 int _atoi(char *s)
 {
-    int result = 0, sign = 1, i = 0;
-    
+    int result = 0, sign = 1, i = 0, num_count = 0;
+
+    if (s == NULL)
+        return 0;
+
     if (s[0] == '-')
     {
         sign = -1;
@@ -24,8 +27,9 @@ int _atoi(char *s)
         if (s[i] >= '0' && s[i] <= '9')
         {
             result = result * 10 + (s[i] - '0');
+            num_count++;
         }
-        else
+        else if (num_count > 0)
         {
             break;
         }
