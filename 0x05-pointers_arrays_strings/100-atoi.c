@@ -9,7 +9,7 @@
  */
 int _atoi(char *s)
 {
-	int result = 0; 
+	int result = 0;
 	int sign = 1, i = 0, has_digits = 0;
 
 	if (s == NULL)
@@ -40,5 +40,5 @@ int _atoi(char *s)
 		i++;
 	}
 
-	return result * sign;
+	return (result * sign);
 }
