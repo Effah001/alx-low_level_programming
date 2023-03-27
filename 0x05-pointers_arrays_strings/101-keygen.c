@@ -4,17 +4,22 @@
 
 int main(void)
 {
-    srand(time(NULL));  
     int i;
-    char password[7];   
-    
-    for (i = 0; i < 6; i++)
+    srand(time(NULL));  
+    char password[7]; 
+
+    for (i = 0; i < 7; i++)
     {
-        password[i] = rand() % 94 + 33; 
+        if (i == 6)
+        {
+            password[i] = '\0';
+        }
+        else
+        {
+            password[i] = rand() % 10 + 48;
+        }
     }
-    password[6] = '\0';  
 
-    printf("%s\n", password);
-
+    printf("%s", password);
     return 0;
 }
