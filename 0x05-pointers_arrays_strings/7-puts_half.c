@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* reset_to_98 :  resets the value of an integer pointer to 98
-*@n : pointer to an integer to be reset
+* puts_half -  prints the second half of a string
+*@str : pointer to a string
 * Return: nothing
 */
 
@@ -17,8 +17,9 @@
 	{
 	n = (len - 1) / 2;
 	}
-	for (int i = n; i < len; i++);
-        putchar(str[i]);
+	for (int i = n; i < len; i++)
+	{
+        _putchar(str[i]);
 	}
-	putchar('\n'); 
+	_putchar('\n'); 
 }
