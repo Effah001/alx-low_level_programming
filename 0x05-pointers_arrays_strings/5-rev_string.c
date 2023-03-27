@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* reset_string - reverse a string
+* rev_string - reverse a string
 *@s : pointer to an integer to be reversed
 * Return: nothing
 */
