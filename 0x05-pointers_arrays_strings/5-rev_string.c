@@ -19,8 +19,9 @@
 
 	while ( i != n)
 	{
-		c = str[i];
-		str[i] = str[g - i];
-		str[g-i] = c;
+		c = s[i];
+		s[i] = s[g - i];
+		s[g-i] = c;
 		i++;
 	}
+}
