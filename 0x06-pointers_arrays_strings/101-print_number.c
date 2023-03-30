@@ -1,7 +1,10 @@
 #include "main.h"
 
-void print_number(int n)
+void print_number(int num)
 {
+	int num;
+	int digits;
+	
 	if (num < 0)
 	{
 		_putchar('-');
@@ -12,7 +15,7 @@ void print_number(int n)
 		_putchar('0');
 	return;
 	}
-	char digits[90];
+	digits[90];
 	int i = 0;
 
 	while (num > 0)
