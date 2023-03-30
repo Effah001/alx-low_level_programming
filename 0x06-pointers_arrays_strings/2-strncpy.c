@@ -1,6 +1,12 @@
 #include "main.h"
+/**
+* _strncpy - copies a sting into another string
+*@dest : destination string to be copied to
+*@src : source string
+*Return: nothing
+*/
 
-char *_strcat (char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 	{
 	int i,j = 0;
 
@@ -12,5 +18,5 @@ char *_strcat (char *dest, char *src, int n)
 	}
 	dest[i] ='\0';
 
-	return dest;
+	return (dest);
 	}
