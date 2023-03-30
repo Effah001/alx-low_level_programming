@@ -2,7 +2,7 @@
 
 /**
 * rot13 - reverse the numbers in an array
-*@s : pointer to a character
+*@s: pointer to a character
 * Return: nothing
 */
 
