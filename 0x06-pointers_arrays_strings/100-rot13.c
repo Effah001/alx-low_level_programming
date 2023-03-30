@@ -26,4 +26,3 @@ void replace_with_13th(char *s)
 	}
 		i++;
 	}
-}
