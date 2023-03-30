@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* replace_with_13th - reverse the numbers in an array
+* rot13 - reverse the numbers in an array
 *@s : pointer to a character
 * Return: nothing
 */
@@ -9,7 +9,7 @@
 char *alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char *rot13_alphabet = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-void rot13(char *s)
+char *rot13(char *s)
 {
 	int i = 0;
 	while (s[i] != '\0')
