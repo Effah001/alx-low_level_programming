@@ -2,8 +2,8 @@
 
 void print_number(int num)
 {
-	int num;
-	int digits;
+	int num = 0;
+	int digits[50];
 	
 	if (num < 0)
 	{
@@ -15,13 +15,11 @@ void print_number(int num)
 		_putchar('0');
 	return;
 	}
-	digits[90];
-	int i = 0;
-
 	while (num > 0)
 	{
 	digits[i] = num % 10 + '0';
 	num /= 10;
+	i++
 	}
 	for (int j = i - 1; j >= 0; j--)
 	{
