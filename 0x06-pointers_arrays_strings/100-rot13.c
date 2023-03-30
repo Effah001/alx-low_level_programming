@@ -18,7 +18,7 @@ void replace_with_13th(char *s)
 	{
 		c = c + 13;
 	}
-	else if (c > 'z') || (c > 'Z')
+	else if ((c > 'z') || (c > 'Z'))
 	{
 		c = c - 26; 
 	}
