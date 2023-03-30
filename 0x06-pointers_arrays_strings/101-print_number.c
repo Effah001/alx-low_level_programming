@@ -1,11 +1,15 @@
 #include "main.h"
+/**
+*print_number - print integers from the user
+*
+*/
 
 void print_number(int num)
 {
 	int j;
 	int i = 0;
 	int digits[50];
-	
+
 	if (num < 0)
 	{
 		_putchar('-');
