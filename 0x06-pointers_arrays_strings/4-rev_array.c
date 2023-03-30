@@ -7,9 +7,10 @@ void reverse_array(int *a, int n)
 	int j = n -1;
 	int c;
 
-	while ( i < n / 2){
+	while ( i < n / 2)
+	{
 
-        	c = a[i];
+       		c = a[i];
 		a[i] = a[j - i];
 		a[j - i] = c;
 
