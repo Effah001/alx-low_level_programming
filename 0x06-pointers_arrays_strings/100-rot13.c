@@ -23,8 +23,7 @@ char *rot13(char *s)
 		c = c - 26; 
 	}
 		s[i] = c;
-	}
 		i++;
 	}
-return (s)
+return (s);
 }
