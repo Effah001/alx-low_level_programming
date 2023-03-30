@@ -4,6 +4,7 @@
 * _strncat - concatenate two strings based on n
 *@dest : destination string to be concatenated to
 *@src : source string
+*@n : number of bytes
 *Return: nothing
 */
 
