@@ -2,7 +2,7 @@
 
 void print_number(int num)
 {
-	int num = 0;
+	int n = 0;
 	int digits[50];
 	
 	if (num < 0)
@@ -19,7 +19,7 @@ void print_number(int num)
 	{
 	digits[i] = num % 10 + '0';
 	num /= 10;
-	i++
+	i++;
 	}
 	for (int j = i - 1; j >= 0; j--)
 	{
