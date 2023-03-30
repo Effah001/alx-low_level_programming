@@ -2,7 +2,8 @@
 
 void print_number(int num)
 {
-	int n = 0;
+	int j;
+	int i = 0;
 	int digits[50];
 	
 	if (num < 0)
@@ -21,7 +22,7 @@ void print_number(int num)
 	num /= 10;
 	i++;
 	}
-	for (int j = i - 1; j >= 0; j--)
+	for (j = i - 1; j >= 0; j--)
 	{
 	_putchar(digits[j]);
 	}
