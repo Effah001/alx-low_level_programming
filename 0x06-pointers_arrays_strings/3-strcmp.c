@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+* _strcmp - compare to strings
+*@s1: pointer to a character
+*@s2: pointer to a character
+* Return: nothing
+*/
 	
 	int _strcmp(char *s1, char *s2)
 	{
