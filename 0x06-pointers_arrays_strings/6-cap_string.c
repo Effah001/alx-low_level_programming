@@ -1,8 +1,8 @@
 #include "main.h"
-
-/** cap_string - capitalise the alphabets after punctuation marks
-* 
-*
+/**
+* cap_string - capitalise the alphabets after punctuation marks
+*@s : name of the pointer to string
+* Return: s
 */
 
 char *cap_string(char *s)
