@@ -25,7 +25,7 @@ int _atoi(char *s)
 	
 	if (num_of_neg % 2 == 1)
 	{
-		is_negative = 1;
+		is_neg = 1;
 	}
 	
 	for (; s[i] != '\0'; i++)
@@ -33,7 +33,7 @@ int _atoi(char *s)
 		num = num * 10 + (s[i] - '0');
 	}
 	
-	if (is_negative)
+	if (is_neg)
 	{
 		num = -num;
 	}
