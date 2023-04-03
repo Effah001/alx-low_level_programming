@@ -10,25 +10,25 @@
 
 char *_strpbrk(char *s, char *accept)
 {	
-	int i = 0;
-	int j;
+	int x = 0;
+	int y;
 
-	while(s[i] != '\0')
+	while(s[x] != '\0')
 
 	{
-		j = 0;
-		while(accept[j] != '\0')
+		y = 0;
+		while(accept[y] != '\0')
 		{
-			if (s[i] == accept[j])
+			if (s[x] == accept[y])
 			{
-				return &s[i];
+				return &s[x];
 		
 			}
-			j++;
+			y++;
 		
 		}
 		
-		i++;
+		x++;
 		}
 
 	return NULL;
