@@ -4,7 +4,7 @@
 *@s : the length of the string to be displayed
 */
 
-void _strlen_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
 	{
