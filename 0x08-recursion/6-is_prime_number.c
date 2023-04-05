@@ -2,7 +2,9 @@
 /**
 * is_prime_number - a function that returns 1 if the input integer
 * is a prime number, otherwise return 0
-* is_prime_helper - help prime_number
+* is_prime_helper - help is_prime_number
+*@n: input number
+*Return: Prime or not
 */
 
 int is_prime_number(int n)
