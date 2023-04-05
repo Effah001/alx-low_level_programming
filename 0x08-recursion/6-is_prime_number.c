@@ -2,6 +2,7 @@
 /**
 * is_prime_number - a function that returns 1 if the input integer is prime
 *@n: input number
+* is_prime_helper - a function that helps _is_prime_number
 *Return: Prime or not
 */
 
