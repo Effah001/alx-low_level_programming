@@ -3,6 +3,7 @@
 int is_palindrome(char * str)
 {
 	int x;
+	int y;
 	int len = 0;
 	
 	while (str[len] != '\0')
@@ -20,3 +21,4 @@ int is_palindrome(char * str)
 	y--;
 	}
 		return 1;
+}
