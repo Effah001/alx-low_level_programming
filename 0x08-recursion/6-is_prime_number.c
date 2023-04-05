@@ -1,7 +1,6 @@
 #include "main.h"
 /**
 * is_prime_number - a function that returns 1 if the input integer is prime
-* is_prime_helper - a function that helps _is_prime_number
 *@n: input number
 *Return: Prime or not
 */
