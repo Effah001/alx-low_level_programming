@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 
 int main(int argc,char * argv[])
 {
@@ -8,7 +9,7 @@ int main(int argc,char * argv[])
 
 	if (argc != 3)
 	{	
-		printf("Error\n");
+		_puts("Error\n");
 		return (1);
 	}
 	
@@ -19,6 +20,6 @@ int main(int argc,char * argv[])
 		mul = mul * m;
 	}
 		
-		printf("%d\n", mul);
+		_puts(itoa(null));
 		return(0);
 }
