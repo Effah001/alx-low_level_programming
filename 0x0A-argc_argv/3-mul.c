@@ -29,6 +29,6 @@ int main(int argc, char *argv[])
 		mul = mul * m;
 	}
 
-		_puts(itoa(null));
+		printf("%d\n", mul);
 		return (0);
 }
