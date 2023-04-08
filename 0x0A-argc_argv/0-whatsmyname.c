@@ -2,8 +2,12 @@
 
 int main(__attribute__((unused)) int argc, char *argv[])
 {
-
-	_putchar(argv[0]);
-	_putchar('\n');
+	char *s = argv[0]
+	while (*str != '\0')
+	{
+	_putchar(*str);
+	str++;
+	}
+	putchar('\n');
 	return (0);
 }
