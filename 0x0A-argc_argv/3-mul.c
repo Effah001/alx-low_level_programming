@@ -25,10 +25,10 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		int m =  atoi(argv[i]);
-		
+
 		mul = mul * m;
 	}
 
-		_puts (itoa(null));
-		return(0);
+		_puts(itoa(null));
+		return (0);
 }
