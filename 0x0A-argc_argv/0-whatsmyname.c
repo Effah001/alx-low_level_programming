@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* main - prints out it name
+* main - prints out it name.
 *
 */
 
