@@ -1,7 +1,9 @@
 #include "main.h"
 /**
 * main - prints out it name.
-*
+* argc - arguments count
+* argv - argument vector
+* Return: zero
 */
 
 int main(__attribute__((unused)) int argc, char *argv[])
