@@ -9,7 +9,7 @@
 * Return: zero
 */
 
-int main(int argc ,char *argv[])
+int main(int argc, char *argv[])
 {
 	int add = 0;
 	int i;
@@ -19,13 +19,14 @@ int main(int argc ,char *argv[])
 		printf("0\n");
 	}
 
-	for(i = 1; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-	
+
 		int a = atoi(argv[i]);
+
 		add = add + a;
         }
-
-                printf ("%d\n", add);
-                return(0);
+	
+		printf("%d\n", add);
+		return (0);
 }
