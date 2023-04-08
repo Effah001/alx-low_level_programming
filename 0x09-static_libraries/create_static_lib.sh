@@ -2,4 +2,4 @@
 
 gcc -c *.c
 
-ar rcs liball.a *.a
+ar liball.a *.a
