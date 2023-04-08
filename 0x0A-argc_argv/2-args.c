@@ -13,12 +13,8 @@ int main(int argc , char *argv[])
 	int i;
 	for(i = 0; i <argc; i++)
 	{
-	while (*s != '\0')
-	{
-	_putchar(*s);
-		s++;
+	_puts(s);
+	s = argv[i + 1];
 	}
-	_putchar('\n');
-	}
-		return 0;
+	return 0;
 }
