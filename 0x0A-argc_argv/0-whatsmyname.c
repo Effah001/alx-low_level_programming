@@ -7,7 +7,7 @@ int main(__attribute__((unused)) int argc, char *argv[])
 	while (*s != '\0')
 	{
 	_putchar(*s);
-	str++;
+	s++;
 	}
 	_putchar('\n');
 	return (0);
