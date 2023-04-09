@@ -5,7 +5,7 @@
  * _atoi - Converts a string to an integer
  * @s: Pointer to the string to be converted
  *
- * Return: num 
+ * Return: num
  */
 int _atoi(char *s)
 {
@@ -19,10 +19,10 @@ int _atoi(char *s)
 	if (s[i] == '-')
 	{
 		num_of_neg++;
-        }
+	}
 		i++;
 	}
-	
+
 	if (num_of_neg % 2 == 1)
 	{
 		is_neg = 1;
@@ -32,11 +32,11 @@ int _atoi(char *s)
 	{
 		num = num * 10 + (s[i] - '0');
 	}
-	
+
 	if (is_neg)
 	{
 		num = -num;
 	}
 
-return num;
+return (num);
 }
