@@ -22,12 +22,12 @@ int main(int argc, char *argv[])
 	for (x = 1; x < argc; x++)
 	{
 
-		char *arg = argv[i]
+		char *arg = argv[i];
 		int y;
 		
-		for (y =; arg[y] != '\0'; y++)
+		for (y =0; arg[y] != '\0'; y++)
 		{
-			if(!isdigit(arg[j]))
+			if(!isdigit(arg[y]))
 			{
 				printf("Error\n");
 				return (1);
