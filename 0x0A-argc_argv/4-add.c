@@ -12,15 +12,27 @@
 int main(int argc, char *argv[])
 {
 	int add = 0;
-	int i;
+	int x;
 
 	if (argc == 1)
 	{
 		printf("0\n");
 	}
 
-	for (i = 1; i < argc; i++)
+	for (x = 1; x < argc; x++)
 	{
+
+		char *arg = argv[i]
+		int y;
+		
+		for (y =; arg[y] != '\0'; y++)
+		{
+			if(!isdigit(arg[j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
 
 		int a = atoi(argv[i]);
 
