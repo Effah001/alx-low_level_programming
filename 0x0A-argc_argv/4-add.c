@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
 	for (x = 1; x < argc; x++)
 	{
-
+		int a = atoi(argv[x]);
 		char *arg = argv[x];
 		int y;
 		
@@ -33,8 +33,6 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-
-		int a = atoi(argv[x]);
 
 		add = add + a;
 	}
