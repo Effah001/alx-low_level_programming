@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	for (x = 1; x < argc; x++)
 	{
 
-		char *arg = argv[i];
+		char *arg = argv[x];
 		int y;
 		
 		for (y =0; arg[y] != '\0'; y++)
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 			}
 		}
 
-		int a = atoi(argv[i]);
+		int a = atoi(argv[x]);
 
 		add = add + a;
 	}
