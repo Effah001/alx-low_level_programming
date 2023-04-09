@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	int add = 0;
 	int x;
 
-	if (argc < 1)
+	if (argc == 1)
 	{
 		printf("0\n");
 	}
