@@ -1,4 +1,10 @@
 #include "main.h"
+
+/**
+ * _puts - print the string
+ * Return: none
+ */
+
 void _puts(char *s)
 {
 int i;
