@@ -14,9 +14,9 @@ int main(int argc, char *argv[])
 	int add = 0;
 	int x;
 
-	if (argc == 1)
+	if (argc == 0)
 	{
-		printf("4");
+		printf("0\n");
 	}
 
 	for (x = 1; x < argc; x++)
