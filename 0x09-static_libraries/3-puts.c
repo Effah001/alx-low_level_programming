@@ -2,6 +2,7 @@
 
 /**
  * _puts - print the string
+ *@s : string
  * Return: none
  */
 
