@@ -24,10 +24,10 @@ int main(int argc, char *argv[])
 		int a = atoi(argv[x]);
 		char *arg = argv[x];
 		int y;
-		
-		for (y =0; arg[y] != '\0'; y++)
+
+		for (y = 0; arg[y] != '\0'; y++)
 		{
-			if(!isdigit(arg[y]))
+			if (!isdigit(arg[y]))
 			{
 				printf("Error\n");
 				return (1);
