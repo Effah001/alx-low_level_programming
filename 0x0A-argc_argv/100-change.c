@@ -1,11 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+* main - change amounts
+*@argc : arguments count
+*@argv : argument vector
+* Return: zero
+*/
+
 int main(int argc, char *argv[])
-{   
+{
 	int amount;
 	int change = 0;
-    
+
 	if (argc != 2)
 	{
 	printf("Error\n");
@@ -13,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 
 	amount = atoi(argv[1]);
-	
+
 	if (amount < 0)
 	{
 	printf("0\n");
@@ -29,5 +36,5 @@ int main(int argc, char *argv[])
 	amount %= 2;
 	change += amount;
 	printf("%d\n", change);
-		return 0;
+		return (0);
 }
