@@ -10,21 +10,21 @@ char *argstostr(int ac, char **av)
 	char *str;
 
 	if (ac == 0 || av == NULL)
-		return NULL;
+		return (NULL);
 
 	for (x = 0; x < ac; x++)
 	{
 	for (y = 0; av[x][y] != '\0'; y++)
 	{
 		len++;
-        }
-		len++; 
+	}
+		len++;
 	}
 
 	str = malloc(sizeof(char) * (len + 1));
-	
+
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 
 	for (x = 0; x < ac; x++)
 	{
@@ -37,5 +37,5 @@ char *argstostr(int ac, char **av)
 
 	str[z] = '\0';
 
-		return str;
+		return (str);
 }
