@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+*argstostr - a function that concatenates all the arguments
+*of a program
+*@ac : count of characters
+*@av: arguments
+* Return: str
+*/
 
 char *argstostr(int ac, char **av)
 {
