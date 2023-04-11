@@ -25,6 +25,8 @@ s1 = (char *) malloc(sizeof(char) * (i + j + 1));
 	if (s1 == NULL)
 		return NULL;
 
+	j = 0;
+	
 	while (s2[j] != '\0')
 	{
 	s1[i] = s2[j];
@@ -36,4 +38,3 @@ s1 = (char *) malloc(sizeof(char) * (i + j + 1));
 
 	return s1;
 	}
-
