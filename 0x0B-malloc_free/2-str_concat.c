@@ -37,9 +37,9 @@ s3 = (char *) malloc(sizeof(char) * (i + j + 1));
 
 	j = 0;
 	
-	while (s1[K] != '\0')
+	while (s1[k] != '\0')
 	{
-	s3[k] = s1[K];
+	s3[k] = s1[k];
 	k++;
 	}
 	
