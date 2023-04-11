@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
 * create_array - create an array of c characters.
-*@size : determines the size of the array 
-*@c : the character to be initialized to 
+*@size : determines the size of the array
+*@c : the character to be initialized to
 * Return: a
 */
 
