@@ -35,7 +35,7 @@ s3 = (char *) malloc(sizeof(char) * (i + j + 1));
 	if (s3 == NULL)
 		return NULL;
 
-	j = 0;
+	j = 0; i = 0;
 	
 	while (s1[i] != '\0')
 	{
