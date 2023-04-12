@@ -2,10 +2,9 @@
 #include <stdlib.h>
 
 /**
-*_str_concat - concatenate two strings
+*str_concat - concatenate two strings
 *@s1 : string to be copied
 *@s2 : string to be copied
-*@s3 : string to be copied to
 * Return: s3
 */
 
