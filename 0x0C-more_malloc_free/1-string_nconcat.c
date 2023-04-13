@@ -5,7 +5,7 @@
 *string_nconcat -  a function that concatenates two strings.
 *@s1 : first string
 *@s2 : second string
-*@s3 : resultant string
+*@n : number of characters to be copied
 * Return: s3
 */
 
