@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	}
 
-s3 = (char *) malloc(sizeof(char) * (i + j + 1));
+s3 = malloc(sizeof(char) * (i + j + 1));
 
 	if (s3 == NULL)
 		return (NULL);
