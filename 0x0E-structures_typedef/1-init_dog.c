@@ -23,8 +23,11 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	d->owner = malloc(_strlen(owner) + 1);
 	if (d->owner != NULL)
 	_strcpy(d->owner, owner);
-}
 
+	if(d->name == NULL || d->owner == NULL)
+	free(d->name);
+	free(d->name);
+}
 
 /**
 * _strcpy -  copies a string pointed by str to dest
