@@ -3,9 +3,6 @@
 
 /**
 *print_dog - prints dog
-*@name : name of dog
-*@owner : owner of dog
-*@age : age of dog
 *@d : pointer to struct dog
 *Return: nothing
 */
