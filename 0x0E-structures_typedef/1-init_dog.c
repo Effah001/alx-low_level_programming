@@ -25,8 +25,10 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	_strcpy(d->owner, owner);
 
 	if (d->name == NULL || d->owner == NULL)
+	{
 	free(d->name);
 	free(d->name);
+	}
 }
 
 /**
