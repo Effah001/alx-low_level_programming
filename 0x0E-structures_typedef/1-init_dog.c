@@ -15,30 +15,14 @@
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d == NULL)
-	{
-		return;
-	}
-	
-	d->name = malloc(_strlen(name) + 1);
-	if (d->name != NULL)
-	{
-	_strcpy(d->name, name);
-	}
-
-	d->age = age;
-
-	d->owner = malloc(_strlen(owner) + 1);
-	if (d->owner != NULL)
-	{
-	_strcpy(d->owner, owner);
-	}
-
-	if (d->name == NULL || d->owner == NULL)
-	{
-	free(d->name);
-	free(d->owner);
-	}
+{
+	return;
 }
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
+}
+
 
 /**
 * _strcpy -  copies a string pointed by str to dest
