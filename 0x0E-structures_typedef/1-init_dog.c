@@ -24,7 +24,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	if (d->owner != NULL)
 	_strcpy(d->owner, owner);
 
-	if(d->name == NULL || d->owner == NULL)
+	if (d->name == NULL || d->owner == NULL)
 	free(d->name);
 	free(d->name);
 }
