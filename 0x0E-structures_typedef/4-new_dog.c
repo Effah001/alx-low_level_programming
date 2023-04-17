@@ -2,12 +2,21 @@
 #include <stdlib.h>
 #include "dog.h"
 
+/**
+*new_dog - new dog
+*@name : name of dog
+*@owner : owner of dog
+*@age : age of dog
+*Return: nothing
+*/
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	char *new_name;
 	char *new_owner;
-	
+
 	dog_t *new_dog = malloc(sizeof(dog_t));
+
 	if (new_dog == NULL)
 	return (NULL);
 
@@ -65,7 +74,7 @@ char *_strcpy(char *dest, char *src)
 	int _strlen(char *s)
 	{
 	int len = 0;
-	
+
 	while (s[len] != '\0')
 	{
 	len++;
