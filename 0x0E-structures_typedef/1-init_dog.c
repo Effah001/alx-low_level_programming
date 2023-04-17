@@ -8,8 +8,7 @@
 *@name : name of dog
 *@owner : owner of dog
 *@age : age of dog
-*@_strlen : calculate the lenght
-*@_strcpy : copy the string
+*@d : pointer to struct dog
 *Return: nothing
 */
 
