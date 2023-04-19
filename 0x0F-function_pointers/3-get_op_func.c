@@ -30,5 +30,5 @@ op_t ops[] = {
 		i++;
 	}
 
-	return NULL;
+	return (NULL);
 }
