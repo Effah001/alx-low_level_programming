@@ -3,8 +3,10 @@
 
 /**
 *int_index - a function that searches for an integer
-*@array : array 
-*@ cmp : pointer to function
+*@array : array
+*@cmp : pointer to function
+*@size : size of array
+*Return : integer
 */
 
 int int_index(int *array, int size, int (*cmp)(int))
