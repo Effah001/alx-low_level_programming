@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	
 	op_func = get_op_func(ope);
 
-	if (!op_func)
+	if (!op_func || ope[1] !='\0')
 	{
 		printf("Error\n");
 		exit(98);
