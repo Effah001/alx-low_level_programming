@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	}
 	if ((*ope == '/' || *ope == '%') && num2 == 0)
 	{
-		print("Error\n");
+		printf("Error\n");
 		exit(100);
 	}
 
