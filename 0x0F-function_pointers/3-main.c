@@ -24,6 +24,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+	if ((*ope == '/' || *ope == '%') && num2 == 0)
+	{
+		print("Error\n");
+		exit(100);
+	}
 
 	result = op_func(num1, num2);
 	printf("%d\n",result);
