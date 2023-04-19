@@ -2,6 +2,8 @@
 #include "3-calc.h"
 
 /**
+*@a : first parameter 
+*@b : second parameter
 *op_add - addition
 *op_sub - subtraction
 *op_mul - multiplication
