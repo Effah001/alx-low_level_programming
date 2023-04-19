@@ -3,7 +3,7 @@
 
 /**
 *print_name - print the name
-*@f : pointer to name 
+*@f : pointer to name
 *@name : input name
 */
 
