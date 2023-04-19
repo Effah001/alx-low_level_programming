@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include "function_pointers.h"
+
 /**
 **array_iterator - iterate through an array
-*array : hold the array of integers
-*action : pointer to function
+*@array : hold the array of integers
+*@action : pointer to function
+*@size : size of integer
 */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
