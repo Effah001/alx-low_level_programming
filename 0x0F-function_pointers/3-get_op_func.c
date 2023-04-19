@@ -25,7 +25,7 @@ op_t ops[] = {
 
 	while (ops[i].op != NULL)
 	{
-		if (strcmp(ops[i].ops, s) == 0)
+		if (strcmp(ops[i].op, s) == 0)
 		return (ops[i].f);
 		i++;
 	}
