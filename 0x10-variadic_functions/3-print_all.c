@@ -46,9 +46,9 @@ void print_all(const char * const format, ...)
 
 		default:
 		x++;
-		continue 
+		continue;
 	}
-		sep = ","
+		sep = ",";
 		x++;
 	}
 
