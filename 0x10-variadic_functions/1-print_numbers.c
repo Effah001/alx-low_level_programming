@@ -16,8 +16,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list print;
 	unsigned int i;
 
+<<<<<<< HEAD
 	if (separator == NULL)
 	return;
+=======
+        
+>>>>>>> fd303633a17c88ea848d70b5bcb0ba3c4a35977e
 
 	va_start(print, n);
 
