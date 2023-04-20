@@ -50,7 +50,6 @@ void print_all(const char * const format, ...)
 		sep = ", ";
 		x++;
 	}
-	}
 	printf("\n");
 	va_end(print);
 }
