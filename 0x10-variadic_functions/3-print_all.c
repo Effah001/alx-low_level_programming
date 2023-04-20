@@ -44,6 +44,9 @@ void print_all(const char * const format, ...)
 		default:
 		break;
         }
+		if (format[i + 1] && (format[i] == 'c' || format[i] == 'i' ||
+		format[i] == 'f' || format[i] == 's'))
+		printf(", ");
 
 		i++;
 	}
