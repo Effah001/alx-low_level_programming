@@ -6,31 +6,31 @@
 void print_all(const char * const format, ...)
 {
 	va_list print;
-	int i = 0;
+	int x = 0;
 	char *str;
-	char cha;
-	int inte;
-	float float1;
+	char c;
+	int i;
+	float f;
 
 	va_start(print, format);
 
-	while (format && format[i])
+	while (format && format[x])
 	{
-	switch (format[i])
+	switch (format[x]
         {
 		case 'c':
 		cha = va_arg(print, int);
-		printf("%c", cha);
+		printf("%c", c;
 		break;
 
 		case 'i':
 		inte = va_arg(print, int);
-		printf("%d", inte);
+		printf("%d", i);
 		break;
 
 		case 'f':
 		float1 = va_arg(print, double);
-		printf("%f", float1);
+		printf("%f", f);
 		break;
 
 		case 's':
@@ -48,7 +48,7 @@ void print_all(const char * const format, ...)
 		format[i] == 'f' || format[i] == 's'))
 		printf(", ");
 
-		i++;
+		x++;
 	}
 
 	va_end(print);	
