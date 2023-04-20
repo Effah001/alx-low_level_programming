@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include "function_pointers.h"
 #include <stdlib.h>
+/**
+*main - entry of the program
+*/
+
 int main(int argc, char *argv[])
 {
 	int num1, num2, result;
@@ -16,10 +20,10 @@ int main(int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	ope = argv[2];
 	num2 = atoi(argv[3]);
-	
+
 	op_func = get_op_func(ope);
 
-	if (!op_func || ope[1] !='\0')
+	if (!op_func || ope[1] != '\0')
 	{
 		printf("Error\n");
 		exit(98);
@@ -31,7 +35,7 @@ int main(int argc, char *argv[])
 	}
 
 	result = op_func(num1, num2);
-	printf("%d\n",result);
+	printf("%d\n", result);
 
-	return 0;
+	return (0);
 }
