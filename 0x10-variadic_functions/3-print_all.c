@@ -18,17 +18,14 @@ void print_all(const char * const format, ...)
 	switch (format[x])
 	{
 		case 'c':
-		c = va_arg(print, int);
 		printf("%s%c", sep,va_arg(print, int));
 		break;
 
 		case 'i':
-		i = va_arg(print, int);
 		printf("%s%d", sep, va_arg(print, int));
 		break;
 
 		case 'f':
-		f = va_arg(print, double);
 		printf("%s%f",sep, va_arg(print, double));
 		break;
 
