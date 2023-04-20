@@ -8,6 +8,9 @@ void print_all(const char * const format, ...)
 	va_list print;
 	int x = 0;
 	char *s;
+	char c;
+	int i;
+	float f;
 	char *sep = "";
 
 	va_start(print, format);
