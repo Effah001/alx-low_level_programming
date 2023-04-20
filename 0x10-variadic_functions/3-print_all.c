@@ -4,7 +4,7 @@
 
 /**
 *print_all - prints everything
-*@format : format specifyer 
+*@format : format specifyer
 *...: Variable number of parameters
 *Return: none
 */
