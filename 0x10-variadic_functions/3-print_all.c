@@ -7,7 +7,7 @@ void print_all(const char * const format, ...)
 {
 	va_list print;
 	int x = 0;
-	char *str;
+	char *s;
 	char c;
 	int i;
 	float f;
@@ -34,11 +34,11 @@ void print_all(const char * const format, ...)
 		break;
 
 		case 's':
-		str = va_arg(print, char *);
-		if (str == NULL)
+		s = va_arg(print, char *);
+		if (s == NULL)
 			printf("(nil)");
 		else
-			printf("%s", str);
+			printf("%s", s);
 		break;
 
 		default:
