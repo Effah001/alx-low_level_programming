@@ -7,10 +7,10 @@ void print_all(const char * const format, ...)
 {
 	va_list print;
 	int i = 0;
-	char *s;
-	char c;
-	int num;
-	float f;
+	char *str;
+	char cha;
+	int inte;
+	float float1;
 
 	va_start(print, format);
 
@@ -19,26 +19,26 @@ void print_all(const char * const format, ...)
 	switch (format[i])
         {
 		case 'c':
-		c = va_arg(print, int);
-		printf("%c", c);
+		cha = va_arg(print, int);
+		printf("%c", cha);
 		break;
 
 		case 'i':
-		num = va_arg(print, int);
-		printf("%d", num);
+		inte = va_arg(print, int);
+		printf("%d", inte;
 		break;
 
 		case 'f':
-		f = va_arg(print, double);
-		printf("%f", f);
+		float1 = va_arg(print, double);
+		printf("%f", float1);
 		break;
 
 		case 's':
-		s = va_arg(print, char *);
-		if (s == NULL)
+		str = va_arg(print, char *);
+		if (str == NULL)
 			printf("(nil)");
 		else
-			printf("%s", s);
+			printf("%s", str);
 		break;
 
 		default:
