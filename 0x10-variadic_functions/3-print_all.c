@@ -24,12 +24,12 @@ void print_all(const char * const format, ...)
 		break;
 
 		case 'i':
-		inte = va_arg(print, int);
+		i = va_arg(print, int);
 		printf("%d", i);
 		break;
 
 		case 'f':
-		float1 = va_arg(print, double);
+		f = va_arg(print, double);
 		printf("%f", f);
 		break;
 
