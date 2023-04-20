@@ -3,8 +3,8 @@
 #include <stdlib.h>
 /**
 *main - entry of the program
-*@argc - argument count
-*@argv - argument vector
+*@argc : argument count
+*@argv : argument vector
 *Return: Nothing
 */
 
