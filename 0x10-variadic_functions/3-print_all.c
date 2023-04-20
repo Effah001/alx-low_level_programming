@@ -2,6 +2,14 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
+/**
+*print_all - prints everything
+*@format : format specifyer 
+*...: Variable number of parameters
+*Return: none
+*/
+
+
 void print_all(const char * const format, ...)
 {
 	va_list print;
