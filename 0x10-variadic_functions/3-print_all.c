@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 
@@ -37,7 +36,7 @@ void print_all(const char * const format, ...)
 		s = va_arg(print, char *);
 		if (s == NULL)
 			printf("(nil)");
-		else
+
 			printf("%s", s);
 		break;
 
