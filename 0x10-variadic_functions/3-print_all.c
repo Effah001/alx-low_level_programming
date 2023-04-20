@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 	while (format && format[x])
 	{
 	switch (format[x]
-        {
+	{
 		case 'c':
 		cha = va_arg(print, int);
 		printf("%c", c;
@@ -43,7 +43,7 @@ void print_all(const char * const format, ...)
 
 		default:
 		break;
-        }
+	}
 		if (format[i + 1] && (format[i] == 'c' || format[i] == 'i' ||
 		format[i] == 'f' || format[i] == 's'))
 		printf(", ");
@@ -51,7 +51,7 @@ void print_all(const char * const format, ...)
 		x++;
 	}
 
-	va_end(print);	
+	va_end(print);
 	printf("\n");
 
 }
