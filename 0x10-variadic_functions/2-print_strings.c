@@ -2,6 +2,14 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
+/**
+*print_string - sum all the characters
+*@n : number of arguments
+*@separator : separation
+*...: Variable number of parameters
+*Return: none
+*/
+
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list print;
