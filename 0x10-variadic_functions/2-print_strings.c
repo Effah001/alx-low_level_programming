@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
-*print_string - sum all the characters
+*print_strings - sum all the characters
 *@n : number of arguments
 *@separator : separation
 *...: Variable number of parameters
@@ -21,13 +21,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n ; i++)
 	{
 	s = va_arg(print, char*);
-		if(s == NULL)
+		if (s == NULL)
 		printf("(nil)");
 
 		printf("%s", s);
-		
-		if(i < n - 1 && separator != NULL)
-			printf("%s",separator);
+
+		if (i < n - 1 && separator != NULL)
+			printf("%s", separator);
 	}
 		printf("\n");
 	va_end(print);
