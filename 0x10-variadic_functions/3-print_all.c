@@ -15,26 +15,24 @@ void print_all(const char * const format, ...)
 
 	va_start(print, format);
 
-	if(format)
-	{
 		
-	while (format[x])
+	while (format && format[x])
 	{
 	switch (format[x])
 	{
 		case 'c':
 		c = va_arg(print, int);
-		printf("%s%c", sep,c);
+		printf("%s%c", sep,va_arg(print, int));
 		break;
 
 		case 'i':
 		i = va_arg(print, int);
-		printf("%s%d", sep, i);
+		printf("%s%d", sep, va_arg(print, int));
 		break;
 
 		case 'f':
 		f = va_arg(print, double);
-		printf("%s%f",sep,f);
+		printf("%s%f",sep, va_arg(print, double));
 		break;
 
 		case 's':
@@ -53,7 +51,6 @@ void print_all(const char * const format, ...)
 		x++;
 	}
 	}
-	va_end(print);
 	printf("\n");
-
+	va_end(print);
 }
