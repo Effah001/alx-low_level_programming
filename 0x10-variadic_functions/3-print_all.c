@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 	{
 		case 'c':
 		c = va_arg(print, int);
-		printf("%S%c", sep,c);
+		printf("%s%c", sep,c);
 		break;
 
 		case 'i':
@@ -48,7 +48,7 @@ void print_all(const char * const format, ...)
 		x++;
 		continue;
 	}
-		sep = ",";
+		sep = ", ";
 		x++;
 	}
 
