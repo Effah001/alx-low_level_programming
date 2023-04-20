@@ -3,6 +3,7 @@
 
 /**
 *sum_them_all - sum all the characters
+*@n : number of arguments
 *Return: sum
 */
 
