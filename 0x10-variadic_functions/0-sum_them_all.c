@@ -4,6 +4,7 @@
 /**
 *sum_them_all - sum all the characters
 *@n : number of arguments
+*...: Variable number of parameters
 *Return: sum
 */
 
