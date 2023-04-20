@@ -15,9 +15,10 @@ void print_all(const char * const format, ...)
 
 	va_start(print, format);
 
-
+	if(format)
+	{
 		
-	while (format && format[x])
+	while (format[x])
 	{
 	switch (format[x])
 	{
@@ -51,7 +52,7 @@ void print_all(const char * const format, ...)
 		sep = ", ";
 		x++;
 	}
-
+	}
 	va_end(print);
 	printf("\n");
 
