@@ -1,11 +1,18 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+/**
+ *struct list_s - structure for the list
+ *@str: pointer to the stirng
+ *@len: length of the list
+ *@next: ponter to the next node
+ */
+
 typedef struct list_s
 {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
 
 
