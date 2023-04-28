@@ -24,9 +24,11 @@ list_t *add_node(list_t **head, const char *str)
 
 	while(*str != '\0')	
 	{
-	new_node->len = x;
+	str++;
 	x++;
 	}
+	
+	new_node->len = x;
 	new_node->next = *head;
 	*head = new_node;
 
