@@ -4,8 +4,11 @@
 #include "lists.h"
 
 /**
-
-*/
+ *print_list - print all elements
+ *@h: pointer to the first node
+ *
+ *Return: count
+ */
 
 size_t print_listint(const listint_t *h)
 {
