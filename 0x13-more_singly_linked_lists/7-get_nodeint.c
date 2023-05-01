@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
-*pop_listint - a function that deletes the head node
+*get_nodeint_at_index - a function that deletes the head node
 *@head: pointer to the list
 *Return: integer
 */
