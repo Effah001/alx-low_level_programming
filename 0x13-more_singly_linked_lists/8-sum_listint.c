@@ -4,9 +4,9 @@
 #include "lists.h"
 
 /**
- *add_nodeint_end - print all elements
+ *sum_listint - add  all the nodes
  *@head: pointer to the first node
- *@n: integer
+ *
  *Return: count
  */
 
@@ -15,9 +15,10 @@ int sum_listint(listint_t *head)
 	int sum = 0;
 	int x;
 
-	if ( head == NULL)
+	if (head == NULL)
 		return(0);
-
+	sum = head->n;
+	
 	while (head->next != NULL)
 	{
 	head = head->next;
