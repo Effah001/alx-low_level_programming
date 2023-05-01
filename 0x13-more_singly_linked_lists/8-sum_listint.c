@@ -25,6 +25,6 @@ int sum_listint(listint_t *head)
 	x = head->n;
 	sum = sum + x;
 	}
-	
+
 	return (sum);
 }
