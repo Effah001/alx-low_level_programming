@@ -23,12 +23,12 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			printf("-> [%p] %d\n", (void *)temp, temp->n);
 			break;
-		{
+		}
 		(visited[(size_t)temp % 10000]) = 1;
 		printf("[%p] %d\n", (void *)temp, temp->n);
 		
 		temp = temp->next;
-
+		i++;
 	}
 	return (i);
 }
