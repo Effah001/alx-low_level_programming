@@ -13,7 +13,7 @@ size_t print_listint_safe(const listint_t *head)
 {
 	int i = 0;
 	const listint_t *temp = head;
-	int visited[10000] = 10;
+	int visited[10000] = {0};
 	
 	while (temp)
 	{
