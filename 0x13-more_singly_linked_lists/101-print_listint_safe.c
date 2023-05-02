@@ -42,6 +42,7 @@ size_t print_listint_safe(const listint_t *head)
 	printf("[%p] %d\n", (void *)forw, forw->n);
 	prev = forw;
 	if (prev->next == NULL)
+	{
 		break;
 	}
 	forw = forw->next;
