@@ -15,30 +15,29 @@ size_t print_listint_safe(const listint_t *head)
 	const listint_t *prev = head;
 	const listint_t *forw = head;
 	
-	while (forw && forw->next)
+	while (prev && forw && forw->next)
 	{
+		printf("[%p] %d\n", (void *)prev, prev->n);
 		prev = prev->next;
 		forw = forw->next->next;
-		i++;
 
 		if (prev == forw)
 		{
 			printf("-> [%p] %d\n", (void *)prev, prev->n);
 			i++;
-			break;
-		}
-		
-		printf("[%p] %d\n", (void *)prev, prev->n);
-	}
-	
-	if (!forw || !forw->next)
-	{
-		while (prev)
-		{
-			printf("[%p] %d\n", (void *)prev, prev->n);
 			prev = prev->next;
-			i++;
+			
+			while (prev != forw)
+		{
+				printf("[%p] %d\n", (void *)prev, prev->n);
+				prev =prev->next;
 		}
+		break;
 	}
+	else
+	{
+		i++;
+	}
+}
 	return (i);
 }
