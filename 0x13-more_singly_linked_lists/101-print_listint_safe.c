@@ -13,17 +13,17 @@ size_t print_listint_safe(const listint_t *head)
 {
 	int i = 0;
 	const listint_t *temp = head;
-	int check[1000] = {0};
+	int check[20000] = {0};
 
 	while (temp)
 	{
-		if (check[(size_t)temp % 10000])
+		if (check[(size_t)temp % 20000])
 		{
 			printf("-> [%p] %d\n", (void *)temp, temp->n);
 			break;
 		}
 		
-		(check[(size_t)temp % 1000]) = 1;
+		(check[(size_t)temp % 20000]) = 1;
 		printf("[%p] %d\n", (void *)temp, temp->n);
 
 		temp = temp->next;
