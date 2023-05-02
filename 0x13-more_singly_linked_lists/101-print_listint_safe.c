@@ -49,7 +49,7 @@ size_t print_listint_safe(const listint_t *head)
 		{
 		break;
 		}
-		forw = forw->next;
+			forw = forw->next;
 		}
 			return(i);
 }
