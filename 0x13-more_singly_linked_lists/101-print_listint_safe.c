@@ -18,8 +18,8 @@ size_t print_listint_safe(const listint_t *head)
 	int condition = head < head->next ? 1 : 0;
 
 	if (head != NULL)
-		printf("[%p] %d\n", (void *)prev, prev->n);
-
+		return (NULL);
+	
 	while (prev != NULL)
 	{
 		if (condition == 1)
