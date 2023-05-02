@@ -11,7 +11,8 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *prev = head, *forw = head;
+	const listint_t *prev = head;
+	const listint_t *forw = head;
 	int i = 0;
 
 	while (prev != NULL && forw->next != NULL)
