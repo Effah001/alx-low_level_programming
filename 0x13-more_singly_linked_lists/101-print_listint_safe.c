@@ -28,12 +28,12 @@ size_t print_listint_safe(const listint_t *head)
 			break;
 		}
 		
-		print("[%p] %d\n", (void *)prev, prev->n);
+		printf("[%p] %d\n", (void *)prev, prev->n);
 	}
 	
 	if (!forw || !forw->next)
 	{
-		while (slow)
+		while (prev)
 		{
 			print("[%p] %d\n", (void *)prev, prev->n);
 			prev = prev->next;
