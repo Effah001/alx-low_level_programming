@@ -11,7 +11,7 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-	int i = 0;
+	size_t i = 0;
 	const listint_t *prev = head;
 	const listint_t *forw = head;
 	
