@@ -12,32 +12,23 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	int i = 0;
-	const listint_t *prev = head;
-	const listint_t *forw = head;
+	const listint_t *temp = head;
+	int visited[10000] = 10;
 	
-	while (prev && forw && forw->next)
+	while (temp)
 	{
-		printf("[%p] %d\n", (void *)prev, prev->n);
-		prev = prev->next;
-		forw = forw->next->next;
+		
 
-		if (prev == forw)
+		if (visited[(size_t)temp % 10000])
 		{
-			printf("-> [%p] %d\n", (void *)prev, prev->n);
-			i++;
-			prev = prev->next;
-			
-			while (prev != forw)
+			printf("-> [%p] %d\n", (void *)temp, temp->n);
+			break;
 		{
-				printf("[%p] %d\n", (void *)prev, prev->n);
-				prev =prev->next;
-		}
-		break;
+		(visited[(size_t)temp % 10000]) = 1;
+		printf("[%p] %d\n", (void *)temp, temp->n);
+		
+		temp = temp->next;
+
 	}
-	else
-	{
-		i++;
-	}
-}
 	return (i);
 }
