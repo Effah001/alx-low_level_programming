@@ -11,9 +11,11 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *prev = head;
-	const listint_t *forw = head->next;
-	
+	const listint_t *prev;
+	const listint_t *forw;
+	prev = head;
+	forw = head->next;
+		
 	int i = 0;
 	int condition = head < head->next ? 1 : 0;
 	
