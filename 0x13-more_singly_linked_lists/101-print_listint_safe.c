@@ -13,10 +13,10 @@ size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *prev = head;
 	const listint_t *forw = head->next;
-		
+
 	int i = 0;
 	int condition = head < head->next ? 1 : 0;
-	
+
 	if (head != NULL)
 		printf("[%p] %d\n", (void *)prev, prev->n);
 
@@ -39,7 +39,7 @@ size_t print_listint_safe(const listint_t *head)
 				exit(98);
 			}
 		}
-		
+
 		i++;
 		printf("[%p] %d\n", (void *)forw, forw->n);
 		prev = forw;
@@ -49,5 +49,5 @@ size_t print_listint_safe(const listint_t *head)
 		}
 			forw = forw->next;
 		}
-			return(i);
+			return (i);
 }
