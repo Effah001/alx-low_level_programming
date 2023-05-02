@@ -4,10 +4,8 @@
 #include "lists.h"
 
 /**
- *insert_nodeint_at_index - insert a node at a given index
+ *reverse_listint - reverse the linked list
  *@head: pointer to the first node
- *@n: integer
- *@idx: index to be inserted
  *Return: address of new node
  */
 
@@ -23,5 +21,5 @@ listint_t *reverse_listint(listint_t **head)
 		*head = forw;
 	}
 		*head = prev;
-	return(*head);
+	return (*head);
 }
