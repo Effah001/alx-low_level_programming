@@ -12,7 +12,7 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	int i = 0;
-	listint_t *temp = head;
+	const listint_t *temp = head;
 	int check[1000] = {0};
 
 	while (temp)
