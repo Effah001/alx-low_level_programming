@@ -38,7 +38,7 @@ size_t print_listint_safe(const listint_t *head)
 			exit(98);
 		}
 	}
-	count++;
+	i++;
 	printf("[%p] %d\n", (void *)forw, forw->n);
 	prev = forw;
 	if (prev->next == NULL)
