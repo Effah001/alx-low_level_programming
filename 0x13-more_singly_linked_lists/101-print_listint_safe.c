@@ -30,6 +30,7 @@ size_t print_listint_safe(const listint_t *head)
 			i++;
 		
 		if (head && forw->next == NULL)
+		{
 			i++;
 			break;
 		}
