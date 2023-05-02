@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- *reverse_listint - reverse the linked list
+ *print_listint_safe - prints a safe list
  *@head: pointer to the first node
  *Return: address of new node
  */
