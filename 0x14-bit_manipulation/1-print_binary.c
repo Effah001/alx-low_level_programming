@@ -13,6 +13,6 @@ void print_binary(unsigned long int n)
 	while (i >= 0)
 	{
 		_putchar((n >> i) & 1 ? '1' : '0');
-		i++;
+		i--;
 	}
 }
