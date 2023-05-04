@@ -8,11 +8,13 @@
 
 void print_binary(unsigned long int n)
 {
-	int i = sizeof(unsigned long int) * 8 - 1;
-
-	while (i >= 0)
+	int i = 0;
+	
+	while ((n >>= i) > 0)
+	i++;
+	
+	while (i-- > 0)
 	{
 		_putchar((n >> i) & 1 ? '1' : '0');
-		i--;
 	}
 }
