@@ -51,7 +51,7 @@ f1 = open(file_from, O_RDONLY);
 		exit(98);
 	}
 
-f2 = fopen(file_to, O_WRONLY | O_CREAT | O_TRUNC, mode);
+f2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, mode);
 	if (f2 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", file_to);
