@@ -12,6 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t num = 0;
 	int op;
 	ssize_t file;
+	char *mem;
 
 	if (!filename)
 		return(0);
@@ -26,8 +27,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	else
 	{
-	file = read(op, mem, letters))
-	fclose(op);
+	file = read(op, mem, letters)
+	close(op);
 	if(file == -1)
 	{
 		return (0);
