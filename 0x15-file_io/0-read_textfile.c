@@ -9,8 +9,8 @@
 
 /**
  *read_textfile - a function that reads a file
- *filename : pointer to the file
- *letters : number of letters it should read and print
+ *@filename : pointer to the file
+ *@letters : number of letters it should read and print
  *Return: the number of characters
  */
 
