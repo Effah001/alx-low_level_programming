@@ -6,8 +6,9 @@
 
 /**
 *copy - a function that copies a file
-*@file_from - pointer to file source file
-*@file_to - pointer to file destination file
+*main - main function
+*@file_from : pointer to file source file
+*@file_to : pointer to file destination file
 *Return: the number of characters
 */
 
