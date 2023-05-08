@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 /**
 *oppy - copy the function
 *@file_from : pointer to file source file
-*@file_to : pointer to file destination file
+*@file_to: pointer to file destination file
 *Return: the number of characters
 */
 
