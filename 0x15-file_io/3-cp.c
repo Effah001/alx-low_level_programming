@@ -11,14 +11,14 @@
 *Return: the number of characters
 */
 
-char buffer[BUFSIZE];
-size_t n;
-int c;
-
 void copy(char *file_from, char *file_to);
 
 int main(int argc, char *argv[])
 {
+	char buffer[BUFSIZE];
+	size_t n;
+	int c;
+
 	if (argc != 3)
 	{
 		fprintf(stderr, "Usage: cp file_from file_to\n");
