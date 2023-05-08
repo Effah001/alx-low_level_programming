@@ -5,7 +5,6 @@
 #define BUFSIZE 1024
 
 /**
-*copy - a function that copies a file
 *main - main function
 *@file_from : pointer to file source file
 *@file_to : pointer to file destination file
