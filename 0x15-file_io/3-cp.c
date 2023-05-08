@@ -43,14 +43,14 @@ size_t n_read, n_write;
 f1 = fopen(file_from, "r");
 	if (!f1)
 	{
-		printf("Error: Can't read from file NAME_OF_THE_FILE %s\n", file_from);
+		fprintf(stderr, "Error: Can't read from file NAME_OF_THE_FILE %s\n", file_from);
 		exit(98);
 	}
 
 f2 = fopen(file_to, "w");
 	if (!f2)
 	{
-		printf("Error: Can't read from file NAME_OF_THE_FILE %s\n", file_to);
+		fprintf(stderr, "Error: Can't write from file NAME_OF_THE_FILE %s\n", file_to);
 		exit(99);
 	}
 
