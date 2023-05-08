@@ -38,7 +38,7 @@ void copy(char *file_from, char *file_to)
 FILE *f1;
 FILE *f2;
 char buffer[1024];
-size_t n;
+size_t n_read, n_write;
 
 f1 = fopen(file_from, "r");
 	if (!f1)
@@ -56,9 +56,14 @@ f2 = fopen(file_to, "w");
 
 chmod(file_to, 0664);
 
-while ((n = fread(buffer, 1, 1024, f1)) > 0)
+while ((n_read = fread(buffer, 1, sizeof(buffer), f1)) > 0)
 {
-	fwrite(buffer, 1, n, f2);
+	n_write = fwrite(buffer, 1, n_read, f2);
+	if (n_write != n_read)
+	{
+		printf("Error: Can't read from file NAME_OF_THE_FILE %s\n", file_to);
+		exit(99);
+	}
 }
 
 if (fclose(f1) == EOF)
