@@ -63,19 +63,22 @@ while (n_read == 1024)
 	n_read = read(f1, buffer, sizeof(buffer));
 	if (n_read == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_to);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-	if (n_read == -1)
-}
+	if (write(f2, buffer, n_read) == -1)
+		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", file_to);
+		exit(99);
+		
+	}
 
-if (fclose(f1) == EOF)
+if (fclose(f1) == -1)
 	{
 	dprintf(STDERR_FILENO, "Error: Can't close file %s\n", file_from);
 	exit(100);
 	}
 
-if (fclose(f2) == EOF)
+if (fclose(f2) == -1)
 	{
 	dprintf(STDERR_FILENO, "Error: Can't close file %s\n", file_from);
 	exit(100);
