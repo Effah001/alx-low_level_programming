@@ -6,8 +6,8 @@
 
 /**
 *main - main function
-*@file_from : pointer to file source file
-*@file_to : pointer to file destination file
+*@argv : determin the arguments
+*@argc : number of arguments
 *Return: the number of characters
 */
 
@@ -29,6 +29,14 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
+
+/**
+*oppy - copy the function
+*@file_from : pointer to file source file
+*@file_to : pointer to file destination file
+*Return: the number of characters
+*/
+
 
 void copy(char *file_from, char *file_to)
 {
