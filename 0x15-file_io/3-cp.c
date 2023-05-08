@@ -37,7 +37,7 @@ void copy(char *file_from, char *file_to)
 {
 FILE *f1;
 FILE *f2;
-char buffer[1024];
+char *buffer[1024];
 size_t n;
 
 f1 = fopen(file_from, "r");
