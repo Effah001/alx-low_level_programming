@@ -11,14 +11,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t num = 0;
 	int op;
-	char *file;
+	ssize_t *file;
 
 	if (!filename)
 		return(0);
 
 	op = open(filename, O_RDONLY);
 
-	file = malloc(sizeof(char) * letters);
+	mem = malloc(sizeof(char) * letters);
 
 	if (!op || !file)
 	{
@@ -26,17 +26,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	else
 	{
-		while (fgets(file, letters, op))
+	file = read(op, mem, letters))
+	fclose(op);
 		{
-			if(ferror(op))
+			if(ferror(file))
 			{
 				return (0);
 			}
 			num += write(STDOUT_FILENO, file, strlen(file));
 		}
 	}
-
-	fclose(fp);
 
 	return (num);
 }
