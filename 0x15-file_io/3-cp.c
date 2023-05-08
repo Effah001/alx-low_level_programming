@@ -4,14 +4,14 @@
 
 #define BUFSIZE 1024
 
+void copy(char *file_from, char *file_to);
+
 /**
 *main - main function
 *@argv : determin the arguments
 *@argc : number of arguments
 *Return: the number of characters
 */
-
-void copy(char *file_from, char *file_to);
 
 int main(int argc, char *argv[])
 {
