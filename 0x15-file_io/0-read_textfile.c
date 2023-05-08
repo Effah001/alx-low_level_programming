@@ -14,18 +14,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (!fp || !file)
 	{
-		return(0);
+		return (0);
 	}
 	else
 	{
-		while(fgets(file,letters, fp))
+		while (fgets(file,letters, fp))
 		{
-			printf("%s", file);
+			printf ("%s", file);
 			num += strlen(file);
 		}
 	}
 
 	fclose(fp);
 
-	return(num);
+	return (num);
 }
