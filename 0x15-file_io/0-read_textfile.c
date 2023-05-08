@@ -7,6 +7,11 @@
 #include <fcntl.h>
 #include "main.h"
 
+/**
+ *read_textfile - a function that reads a file
+ *Return: the number of characters
+ */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t num = 0;
@@ -17,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!filename)
 		return(0);
 
-	op = open(filename, O_RDONLY);
+	op = open (filename, O_RDONLY);
 
 	mem = malloc(sizeof(char) * letters);
 
@@ -29,7 +34,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 	file = read(op, mem, letters);
 	close(op);
-	if(file == -1)
+	if (file == -1)
 	{
 		return (0);
 	}
