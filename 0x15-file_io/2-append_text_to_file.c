@@ -5,6 +5,13 @@
 #include <sys/stat.h>
 #include "main.h"
 
+/**
+ *append_text_to_file - a function that appends a file
+ *@filename : pointer to the file
+ *@text_content : content to be written.
+ *Return: the number of characters
+ */
+
 int append_text_to_file(const char *filename, char *text_content)
 {
 	FILE *fp = fopen(filename, "a");
