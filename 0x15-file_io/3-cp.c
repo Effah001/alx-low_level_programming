@@ -38,35 +38,35 @@ int main(int argc, char *argv[])
 
 void copy(char *file_from, char *file_to)
 {
-FILE *f1;
-FILE *f2;
+int f1;
+int f2;
 char buffer[1024];
 size_t n_read, n_write;
+unsigned int mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 
-f1 = fopen(file_from, "r");
-	if (!f1)
+f1 = open(file_from, O_RDONLY);
+	if (f1 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
 
-f2 = fopen(file_to, "w");
-	if (!f2)
+f2 = fopen(file_to, O_WRONLY | O_CREAT | O_TRUNC, mode);
+	if (f2 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", file_to);
 		exit(99);
 	}
 
-chmod(file_to, 0664);
-
-while ((n_read = fread(buffer, 1, sizeof(buffer), f1)) > 0)
+while (n_read == 1024)
 {
-	n_write = fwrite(buffer, 1, n_read, f2);
-	if (n_write != n_read)
+	n_read = read(f1, buffer, sizeof(buffer));
+	if (n_read == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", file_to);
-		exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_to);
+		exit(98);
 	}
+	if (n_read == -1)
 }
 
 if (fclose(f1) == EOF)
