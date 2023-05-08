@@ -8,13 +8,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t num = 0;
 	FILE *fp;
+	char *file;
 
 	if (!filename)
 		return(0);
 
 	fp = fopen(filename, "r");
 
-	char *file = malloc(letters + 1);
+	file = malloc(letters + 1);
 
 	if (!fp || !file)
 	{
