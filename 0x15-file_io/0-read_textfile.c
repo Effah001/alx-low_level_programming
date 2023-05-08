@@ -9,6 +9,8 @@
 
 /**
  *read_textfile - a function that reads a file
+ *filename : pointer to the file
+ *letters : number of letters it should read and print
  *Return: the number of characters
  */
 
@@ -20,9 +22,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *mem;
 
 	if (!filename)
-		return(0);
+		return (0);
 
-	op = open (filename, O_RDONLY);
+	op = open(filename, O_RDONLY);
 
 	mem = malloc(sizeof(char) * letters);
 
@@ -38,7 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	}	
+	}
 	num += write(STDOUT_FILENO, mem, file);
 
 	return (num);
