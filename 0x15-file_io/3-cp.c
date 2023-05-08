@@ -41,18 +41,18 @@ char buffer[1024];
 size_t n_read, n_write;
 
 f1 = fopen(file_from, "r");
-if (!f1)
-{
-	fprintf(stderr, "Error: Can't read from file NAME_OF_THE_FILE %s\n", file_from);
-	exit(98);
-}
+	if (!f1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
+		exit(98);
+	}
 
 f2 = fopen(file_to, "w");
-if (!f2)
-{
-	fprintf(stderr, "Error: Can't write from file NAME_OF_THE_FILE %s\n", file_to);
-	exit(99);
-}
+	if (!f2)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", file_to);
+		exit(99);
+	}
 
 chmod(file_to, 0664);
 
@@ -61,20 +61,20 @@ while ((n_read = fread(buffer, 1, sizeof(buffer), f1)) > 0)
 	n_write = fwrite(buffer, 1, n_read, f2);
 	if (n_write != n_read)
 	{
-		printf("Error: Can't read from file NAME_OF_THE_FILE %s\n", file_to);
+		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", file_to);
 		exit(99);
 	}
 }
 
 if (fclose(f1) == EOF)
 	{
-	printf("Error: Can't close fd FD_VALUE %d\n", fileno(f1));
+	dprintf(STDERR_FILENO, "Error: Can't close file %s\n", file_from);
 	exit(100);
 	}
 
 if (fclose(f2) == EOF)
 	{
-	printf("Error: Can't close fd FD_VALUE %d\n", fileno(f1));
+	dprintf(STDERR_FILENO, "Error: Can't close file %s\n", file_from);
 	exit(100);
 	}
 }
