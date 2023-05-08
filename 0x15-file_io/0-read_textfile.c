@@ -26,7 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	else
 	{
-		while (fgets(file, letters, fp))
+		while (fgets(file, letters, op))
 		{
 			if(ferror(fp))
 			{
