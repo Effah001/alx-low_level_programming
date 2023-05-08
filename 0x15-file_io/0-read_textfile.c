@@ -33,7 +33,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-		num += write(STDOUT_FILENO, mem, file);
+	}	
+	num += write(STDOUT_FILENO, mem, file);
 
 	return (num);
 }
