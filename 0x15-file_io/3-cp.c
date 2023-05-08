@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <sys/stat.h>
 
-#define BUFSIZE 1024
-
 void copy(char *file_from, char *file_to);
 
 /**
@@ -39,7 +37,7 @@ void copy(char *file_from, char *file_to)
 {
 FILE *f1;
 FILE *f2;
-char buffer[BUFSIZE];
+char buffer[1024];
 size_t n;
 
 f1 = fopen(file_from, "r");
@@ -58,7 +56,7 @@ f2 = fopen(file_to, "w");
 
 chmod(file_to, 0664);
 
-while ((n = fread(buffer, 1, BUFSIZE, f1)) > 0)
+while ((n = fread(buffer, 1, buffer, f1)) > 0)
 {
 	fwrite(buffer, 1, n, f2);
 }
