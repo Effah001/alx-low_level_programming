@@ -20,6 +20,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		while (fgets(file, letters, fp))
 		{
+			if(ferror(fp))
+			{
+				return (0);
+			}
 			printf("%s", file);
 			num += strlen(file);
 		}
