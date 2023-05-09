@@ -38,8 +38,8 @@ int main(int argc, char *argv[])
 
 void copy(char *file_from, char *file_to)
 {
-int f1;
-int f2;
+int f1, close_f1;
+int f2, close_f2;
 char buffer[1024];
 int n_read, n_write;
 unsigned int mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
@@ -67,18 +67,20 @@ while (n_read == 1024)
 		exit(98);
 	}
 	if (write(f2, buffer, n_read) == -1)
+	{
 		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", file_to);
 		exit(99);
-		
 	}
 
-if (fclose(f1) == -1)
+close_f1 = close(f1);
+if (close_f1 == -1)
 	{
 	dprintf(STDERR_FILENO, "Error: Can't close file %s\n", file_from);
 	exit(100);
 	}
 
-if (fclose(f2) == -1)
+close_f2 = close(f2);
+if (close_f2 == -1)
 	{
 	dprintf(STDERR_FILENO, "Error: Can't close file %s\n", file_from);
 	exit(100);
