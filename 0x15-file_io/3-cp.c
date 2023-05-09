@@ -52,7 +52,7 @@ f1 = fopen(file_from, "r");
 f2 = fopen(file_to, "w");
 	if (!f2)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", file_to);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
 
