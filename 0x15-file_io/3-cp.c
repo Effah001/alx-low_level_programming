@@ -41,7 +41,7 @@ void copy(char *file_from, char *file_to)
 int f1, close_f1;
 int f2, close_f2;
 char buffer[1024];
-int n_read, n_write;
+int n_read;
 unsigned int mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 
 f1 = open(file_from, O_RDONLY);
