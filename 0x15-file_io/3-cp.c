@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 
 void copy(char *file_from, char *file_to)
 {
-FILE *F1, *F2;
+FILE *f1, *f2;
 char buffer[1024];
 size_t n_read, n_write;
 
