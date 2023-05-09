@@ -56,6 +56,8 @@ f2 = fopen(file_to, "w");
 		exit(99);
 	}
 
+chmod(file_to, 0664);
+
 while ((n_read = fread(buffer, 1, sizeof(buffer), f1)) > 0)
 {
 	n_write = fwrite(buffer, 1, n_read, f2);
