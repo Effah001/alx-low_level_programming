@@ -58,7 +58,7 @@ f2 = fopen(file_to, "w");
 
 while ((n_read = fread(buffer, 1, sizeof(buffer), f1)) > 0)
 {
-	n_write = fwrite(buffer, 1, n_read,f2);
+	n_write = fwrite(buffer, 1, n_read, f2);
 	if (n_write != n_read)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", file_to);
