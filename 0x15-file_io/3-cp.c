@@ -71,6 +71,7 @@ while (n_read == 1024)
 		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", file_to);
 		exit(99);
 	}
+}
 
 close_f1 = close(f1);
 if (close_f1 == -1)
