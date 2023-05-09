@@ -63,7 +63,7 @@ while ((n_read = fread(buffer, 1, sizeof(buffer), f1)) > 0)
 	n_write = fwrite(buffer, 1, n_read, f2);
 	if (n_write != n_read)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", file_to);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
 }
