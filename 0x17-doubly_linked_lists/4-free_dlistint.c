@@ -1,7 +1,7 @@
 #include "lists.h"
 
   /**
- *free_listint2 - free the list
+ *free_dlistint2 - free the list
  *@head: pointer to the list
  *
  *Return: none
@@ -13,7 +13,7 @@ void free_dlistint(dlistint_t *head){
 	if (head == NULL)
 	return;
 
-	while (*head != NULL)
+	while (head != NULL)
 	{
 		temp = *head;
 		*head = (*head)->next;
