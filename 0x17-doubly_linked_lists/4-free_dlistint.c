@@ -6,18 +6,18 @@
  *
  *Return: none
  */
- 
-void free_dlistint(dlistint_t *head){ 
+
+void free_dlistint(dlistint_t *head)
+{ 
 	dlistint_t *temp;
 
 	if (head == NULL)
-	return;
+		return;
 
 	while (head != NULL)
 	{
-	    temp = head;
-	    head = (head)->next;
-	    free(temp);
+		temp = head;
+		head = (head)->next;
+		free(temp);
 	}
-
 }
