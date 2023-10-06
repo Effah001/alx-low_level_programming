@@ -28,7 +28,6 @@ void hash_table_print(const hash_table_t *ht)
 				flag = 0;
 			else
 				printf(", ");
-
 			printf("'%s': '%s'", current->key, current->value);
 			current = current->next;
 		}
@@ -36,4 +35,3 @@ void hash_table_print(const hash_table_t *ht)
 	}
 	printf("}\n");
 }
-
