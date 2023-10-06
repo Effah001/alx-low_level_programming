@@ -7,22 +7,24 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int i = 0;
     if (!ht)
         return;
 
+    int flag = 0;  // Flag to track the first printed pair
     printf("{");
-    for (i = 0; i < ht->size; ++i)
+
+    for (unsigned long int i = 0; i < ht->size; ++i)
     {
         hash_node_t *current = ht->array[i];
         while (current)
         {
-            printf("'%s': '%s'", current->key, current->value);
-            if (current->next)
+            if (flag)
                 printf(", ");
+            printf("'%s': '%s'", current->key, current->value);
+            flag = 1;  // Set the flag to true after printing the first pair
             current = current->next;
         }
     }
+
     printf("}\n");
 }
-
