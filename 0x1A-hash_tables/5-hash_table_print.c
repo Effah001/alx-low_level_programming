@@ -11,7 +11,7 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i = 0;
 	hash_node_t *current;
-	int flag = 0;
+	int flag = 1;
 
 	if (!ht)
 	{
@@ -25,13 +25,12 @@ void hash_table_print(const hash_table_t *ht)
 		while (current != NULL)
 		{
 			if (flag)
-			{
+				flag = 0;
+			else
 				printf(", ");
-			}
 
 			printf("'%s': '%s'", current->key, current->value);
 			current = current->next;
-			flag = 1;
 		}
 
 	}
