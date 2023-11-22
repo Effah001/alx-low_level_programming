@@ -13,6 +13,6 @@ oclean:
 	rm -f $(OBJ)
 
 fclean: 
-	rm -f $(OBJ) $(NAME) *~ \#*
+	clean oclean
 
 re: fclean all
